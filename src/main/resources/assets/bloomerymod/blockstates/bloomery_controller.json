@@ -1,0 +1,7 @@
+{
+  "variants":
+  {
+    "lit=false": {"model": "bloomerymod:block/bloomery_controller_off"},
+    "lit=true": {"model": "bloomerymod:block/bloomery_controller_on"}
+  }
+}

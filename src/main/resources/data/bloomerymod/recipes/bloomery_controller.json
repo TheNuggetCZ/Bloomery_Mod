@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " B ",
+    "BFB",
+    " B "
+  ],
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:brick"
+    },
+    "F":
+    {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result":
+  {
+    "item": "bloomerymod:bloomery_controller"
+  }
+}
