@@ -1,0 +1,17 @@
+{
+  "type": "bloomerymod:blooming",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/iron"
+    }
+  ],
+  "output": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_nugget",
+      "count": 3
+    }
+  ]
+}

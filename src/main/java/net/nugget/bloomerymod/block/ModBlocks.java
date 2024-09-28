@@ -11,7 +11,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nugget.bloomerymod.BloomeryMod;
-import net.nugget.bloomerymod.block.custom.BloomeryControllerBlock;
+import net.nugget.bloomerymod.block.custom.AbstractBloomeryControllerBlock;
+import net.nugget.bloomerymod.block.custom.BloomeryControllerBricksBlock;
+import net.nugget.bloomerymod.block.custom.BloomeryControllerMudBricksBlock;
 import net.nugget.bloomerymod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -20,10 +22,15 @@ public class ModBlocks
 {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BloomeryMod.MOD_ID);
 
-    public static final RegistryObject<Block> BLOOMERY_CONTROLLER = registerBlock("bloomery_controller",
-            () -> new BloomeryControllerBlock(BlockBehaviour.Properties.of(Material.STONE)
+    public static final RegistryObject<Block> BLOOMERY_CONTROLLER_BRICKS = registerBlock("bloomery_controller_bricks",
+            () -> new BloomeryControllerBricksBlock(BlockBehaviour.Properties.of(Material.STONE)
             .explosionResistance(6f).strength(2f).requiresCorrectToolForDrops()
-            .lightLevel(state -> state.getValue(BloomeryControllerBlock.LIT) ? 13 : 0)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            .lightLevel(state -> state.getValue(AbstractBloomeryControllerBlock.LIT) ? 13 : 0)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> BLOOMERY_CONTROLLER_MUD_BRICKS = registerBlock("bloomery_controller_mud_bricks",
+            () -> new BloomeryControllerMudBricksBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .explosionResistance(6f).strength(2f).requiresCorrectToolForDrops()
+            .lightLevel(state -> state.getValue(AbstractBloomeryControllerBlock.LIT) ? 13 : 0)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {

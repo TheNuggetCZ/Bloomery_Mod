@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bloomerymod:bloomery_controller"
+          "name": "bloomerymod:bloomery_controller_mud_bricks"
         }
       ]
     }

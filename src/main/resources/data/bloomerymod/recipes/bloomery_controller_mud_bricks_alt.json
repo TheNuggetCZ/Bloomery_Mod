@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:bricks"
+      "item": "minecraft:mud_bricks"
     },
     {
       "item": "minecraft:furnace"
     }
   ],
   "result": {
-    "item": "bloomerymod:bloomery_controller"
+    "item": "bloomerymod:bloomery_controller_mud_bricks"
   }
 }

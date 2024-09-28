@@ -2,6 +2,7 @@
   "replace": false,
   "values":
   [
-    "bloomerymod:bloomery_controller"
+    "bloomerymod:bloomery_controller_bricks",
+    "bloomerymod:bloomery_controller_mud_bricks"
   ]
 }

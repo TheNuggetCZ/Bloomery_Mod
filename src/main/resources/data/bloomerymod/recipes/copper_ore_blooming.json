@@ -1,0 +1,17 @@
+{
+  "type": "bloomerymod:blooming",
+  "ingredients": [
+    {
+      "tag": "forge:ores/copper"
+    }
+  ],
+  "output": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "minecraft:gold_nugget",
+      "count": 2
+    }
+  ]
+}

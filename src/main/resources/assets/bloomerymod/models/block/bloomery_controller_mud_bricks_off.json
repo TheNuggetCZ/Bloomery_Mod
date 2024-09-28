@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "north": "bloomerymod:block/bloomery_controller_mud_bricks_off",
+    "south": "minecraft:block/mud_bricks",
+    "east": "minecraft:block/mud_bricks",
+    "west": "minecraft:block/mud_bricks",
+    "up": "minecraft:block/mud_bricks",
+    "down": "minecraft:block/mud_bricks",
+    "particle": "minecraft:block/mud_bricks"
+  }
+}
